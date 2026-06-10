@@ -1,10 +1,18 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+   <View style={styles.container}>
+    <Text style={styles.titulo}>HOME</Text>
+    <Text style={stylea.subtitulo}>Bem vindo a o nosso APP!!</Text>
+    <TouchableOpacity
+    
+    style= {styles.buton}
+    onPress={router.push('/detalhes')}
+    >
+      <Text style={styles.textobuton}>Detalhes</Text>
+    </TouchableOpacity>
+   </View>
   );
 }
 
